@@ -1,0 +1,13 @@
+name: False positive
+description: Report a safe instruction incorrectly flagged by SkillShield
+title: "[False positive]: "
+labels: [false-positive]
+body:
+  - type: input
+    attributes: { label: Rule ID, placeholder: SS001 }
+    validations: { required: true }
+  - type: textarea
+    attributes:
+      label: Minimal safe example
+      description: Remove secrets, credentials, personal information, and client data.
+    validations: { required: true }
